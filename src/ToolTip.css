@@ -1,0 +1,68 @@
+/* Tooltip.css */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+  }
+  
+  .tooltip-top .tooltip-text {
+    position: absolute;
+    top: -30px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  
+  .tooltip-left .tooltip-text {
+    position: absolute;
+    top: 50%;
+    left: -70px; /* Adjust the distance from the left */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    transform: translateY(-50%);
+  }
+  
+  .tooltip-right .tooltip-text {
+    position: absolute;
+    top: 50%;
+    left: 75px; /* Adjust the distance from the right */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    transform: translateY(-50%);
+  }
+  
+  .tooltip-bottom .tooltip-text {
+    position: absolute;
+    top: 60px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  

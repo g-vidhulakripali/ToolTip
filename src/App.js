@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tooltip from "./ToolTip";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Tooltip Example</h1>
+      <p>
+        Hover over these texts to see tooltips:
+        <Tooltip text="Top Tooltip" position="top">
+          <span className="tooltip-trigger">Top </span>
+        </Tooltip>
+        <Tooltip text="Left Tooltip" position="left">
+          <span className="tooltip-trigger">Left </span>
+        </Tooltip>
+        <Tooltip text="Right Tooltip" position="right">
+          <span className="tooltip-trigger">Right </span>
+        </Tooltip>
+        <Tooltip text="Bottom Tooltip" position="bottom">
+          <span className="tooltip-trigger">Bottom </span>
+        </Tooltip>
+      </p>
     </div>
   );
 }
